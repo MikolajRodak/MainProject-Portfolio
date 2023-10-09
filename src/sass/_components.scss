@@ -96,8 +96,6 @@
 	background-color: #fff;
 }
 
-
-
 // shadow add to body when nav comes visible
 .body-shadow {
 	background-color: rgba(0, 0, 0, 0.5);
@@ -189,4 +187,9 @@
 .button:hover i:first-child {
 	visibility: visible;
 	transform: translateX(0px);
+}
+
+// ------FAQ-------
+.rotate-arrow {
+	transform: rotate(90deg);
 }

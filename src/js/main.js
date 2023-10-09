@@ -4,6 +4,7 @@ const nav = document.querySelector('.nav')
 const menu = document.querySelector('.menu')
 const body = document.querySelector('body')
 const img = document.querySelector('.section-img')
+const rightArrow = document.querySelector('.arrow-right')
 
 const handleBurer = () => {
 	burgerBtn.classList.toggle('is-active')
@@ -43,4 +44,20 @@ window.onscroll = () => {
 	}
 }
 
+// ---------FAQ------------------------
+
+let answers = document.querySelectorAll('.question-box')
+answers.forEach(event => {
+	event.addEventListener('click', () => {
+		if (event.classList.contains('active')) {
+			event.classList.remove('active')
+			rightArrow.classList.remove('rotate-arrow')
+		} else {
+			event.classList.add('active')
+			rightArrow.classList.add('rotate-arrow')
+		}
+	})
+})
+
+console.log(rightArrow)
 burgerBtn.addEventListener('click', handleBurer)
