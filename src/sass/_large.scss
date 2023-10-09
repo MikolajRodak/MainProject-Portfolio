@@ -1,0 +1,85 @@
+@media (min-width: 992px) {
+	.hamburger {
+		display: none;
+	}
+	// -----------
+	.nav {
+		&__box {
+			.menu {
+				display: none;
+			}
+			.nav-desktop {
+				display: block;
+				.menu-list {
+					display: flex;
+					flex-direction: row;
+					margin-right: 4em;
+					list-style-type: none;
+					li {
+						padding: 1em;
+						margin-left: 2em;
+						.orange {
+							color: #fca311;
+						}
+
+						a {
+							font-size: 1.1rem;
+							color: #000;
+							text-decoration: none;
+						}
+					}
+					li:hover {
+						cursor: pointer;
+					}
+					li:hover a {
+						color: #fca311;
+					}
+				}
+			}
+		}
+	}
+
+	.firstSection {
+		&__box {
+			.section-description {
+				margin-top: 4em;
+			}
+			.button {
+				margin-top: 2em;
+			}
+		}
+	}
+
+	.forYou {
+		margin-top: 3em;
+		&__box {
+			position: relative;
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	.services {
+		&__box {
+			.options {
+				.option {
+					width: 30%;
+				}
+			}
+		}
+	}
+
+	.projects {
+		&__box {
+			.container {
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				.option{
+					width: 45%;
+					margin-left: 3.5em;
+				}
+			}
+		}
+	}
+}
